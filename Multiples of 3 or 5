@@ -1,0 +1,18 @@
+public class HideAndSeek {
+  public static void main(String[] args) {
+    int n1 = 3;
+    int valor1;
+    
+    for (int i = 1; i<10; i++){
+    valor1 = i/n1;
+    
+    // 1 = 3/3
+    // 2 = 6/3
+
+    if (i > 1 && i % n1 == 0) { 
+    System.out.println(" "+i);
+    }
+
+  }
+}
+}

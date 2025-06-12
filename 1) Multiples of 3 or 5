@@ -2,6 +2,9 @@ public class HideAndSeek {
   public static void main(String[] args) {
     int n1 = 3;
     int valor1;
+    String separador = "";
+    int suma = 0;
+
     
     for (int i = 1; i<10; i++){
     valor1 = i/n1;
@@ -9,10 +12,18 @@ public class HideAndSeek {
     // 1 = 3/3
     // 2 = 6/3
 
-    if (i > 1 && i % n1 == 0) { 
-    System.out.println(" "+i);
-    }
+    if (i % n1 == 0) { 
+        
+    suma += i;   
 
+
+    System.out.print(separador + "i= " + i);
+    separador = ", ";
+    }
+    
   }
+  
+    System.out.println("\nsuma= "+suma);
+
 }
 }

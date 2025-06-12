@@ -6,29 +6,27 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 public class HideAndSeek {
   public static void main(String[] args) {
     int n1 = 3;
-    int valor1;
+    int n2 = 5;
+    int valor1, valor2;
     String separador = "";
     int suma = 0;
-
     
-    for (int i = 1; i<10; i++){
+    for (int i = 1; i<1000; i++){
     valor1 = i/n1;
+    valor2 = i/n2;
     
     // 1 = 3/3
     // 2 = 6/3
 
-    if (i % n1 == 0) { 
+    if (i % n1 == 0 || i % n2 == 0) { 
         
     suma += i;   
 
-
-    System.out.print(separador + "i= " + i);
-    separador = ", ";
+    //System.out.print(separador + "i= " + i);
+   // separador = ", ";
     }
     
-  }
-  
+    }
     System.out.println("\nsuma= "+suma);
-
-}
+  }
 }

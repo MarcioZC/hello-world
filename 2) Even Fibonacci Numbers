@@ -15,15 +15,9 @@ class Main {
     primero = segundo;
     segundo = aux;
     
-    if (aux >= 4000000){
-        aux = 0;
+    if (aux <= 4000000 && aux % 2 == 0){
+        suma += aux;
     }
-    
-    if (aux % 2 == 0){
-        
-    suma += aux;
-    
-    } 
         
     }
     System.out.print("La suma par es: "+suma);

@@ -7,6 +7,38 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 class Main {
     public static void main(String[] args) {
     
+    int primero = 1, segundo = 2, aux=1, suma = 2;
+
+    for (int i = 1; i<=aux; i++){
+    aux = primero + segundo;
+
+    primero = segundo;
+    segundo = aux;
+    
+    if (aux >= 4000000){
+        aux = 0;
+    }
+    
+    if (aux % 2 == 0){
+        
+    suma += aux;
+    
+    } 
+        
+    }
+    System.out.print("La suma par es: "+suma);
+}
+}
+
+
+
+/*
+Fibonacci numbers
+*/
+
+class Main {
+    public static void main(String[] args) {
+    
     int primero = 1, segundo = 2, aux, max = 10;
     int valor = max-1;
     int suma = 2;
@@ -30,3 +62,8 @@ class Main {
     System.out.print("\nLa suma par es: "+suma);
 }
 }
+
+
+
+
+

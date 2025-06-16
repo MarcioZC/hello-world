@@ -8,7 +8,7 @@ public class HideAndSeek {
     int n1 = 3;
     int n2 = 5;
     int valor1, valor2;
-    String separador = "";
+    // String separador = "";  //Para darle separación con coma
     int suma = 0;
     
     for (int i = 1; i<1000; i++){

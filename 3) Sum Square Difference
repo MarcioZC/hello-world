@@ -9,16 +9,26 @@ Find the difference between the sum of the squares of the first one hundred natu
 
 class Main {
     public static void main(String[] args) {
-    
-    int n = 1;
 
-    for (int i = 1; i<11; i++){
+//sum of squares
+String separador = "";
+
+for (int i= 1; i<=10; i++){
+    int resultado = (int) Math.pow(i,2); 
     
-    double resultado = (int) Math.pow(n,2);
-    System.out.print(" "+resultado);
+    System.out.print("" + separador + " " + resultado);
+    separador = ",";
     
-    n++;
-        
-    }
+    /*
+    ---- Another quick method
+    double resultado = Math.pow(i,2); 
+    
+    System.out.print("" + separador + String.format(" %.0f",resultado));
+    separador = ",";
+    */
+    
 }
+
+
+    }
 }

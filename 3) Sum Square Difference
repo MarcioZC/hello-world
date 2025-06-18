@@ -1,34 +1,40 @@
 /*
 The sum of the squares of the first ten natural numbers is, 1 ^ 2 + 2 ^ 2 +...+10^ 2 =385.
-The square of the sum of the first ten natural numbers is,
-(1+2+...+10)^ 2 = 55 ^ 2 = 3025 .
+The square of the sum of the first ten natural numbers is, (1+2+...+10)^ 2 = 55 ^ 2 = 3025 .
 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025385 = 2640.
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square
 */
 
 
 class Main {
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
 //sum of squares
 String separador = "";
+int suma1 = 0, suma2 = 0;
+int resultado1, resultado2, diferencia;
 
-for (int i= 1; i<=10; i++){
-    int resultado = (int) Math.pow(i,2); 
-    
-    System.out.print("" + separador + " " + resultado);
-    separador = ",";
-    
-    /*
-    ---- Another quick method
-    double resultado = Math.pow(i,2); 
-    
-    System.out.print("" + separador + String.format(" %.0f",resultado));
-    separador = ",";
-    */
-    
+for (int i= 1; i<=100; i++){
+resultado1 = (int) Math.pow(i,2);
+
+System.out.print("" + separador + " " + resultado1);
+separador = ",";
+
+suma1 += resultado1;
+
+//square of the sum
+suma2 += i;
+
 }
 
+resultado2 = (int) Math.pow(suma2,2);
 
-    }
+diferencia = resultado2 - suma1;
+
+System.out.print("\n La suma de los digitos es: "+ suma1);
+System.out.print("\n La suma de los digitos es: "+ resultado2);
+
+System.out.print("\n La diferencia es: "+ diferencia);
+}
+
 }

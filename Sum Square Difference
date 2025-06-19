@@ -36,5 +36,4 @@ System.out.print("\n La suma de los digitos es: "+ resultado2);
 
 System.out.print("\n La diferencia es: "+ diferencia);
 }
-
 }

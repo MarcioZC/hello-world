@@ -1,0 +1,43 @@
+/*
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+*/
+
+class Main {
+    public static void main(String[] args) {
+        
+int resultado, contador1 = 0, contador2 = 0, nuevo=0;
+
+do {
+    
+    for (int j = 1; j>= 1; j++) {
+        
+      for (int i = 1; i <= 10; i++) {
+          
+        resultado = j/i;
+        
+            if (resultado == 0){
+                
+                contador1++;
+                
+            } else {
+                
+                contador1 = 0;
+            }
+            
+            
+            if (contador1 == 10){
+                
+                contador2++;
+             
+            nuevo = j;   
+            
+            } 
+        }
+    }    
+        
+} while (contador2 <= 10);
+        
+        System.out.print("The lowest number divisible is: "+ nuevo);
+}
+}
